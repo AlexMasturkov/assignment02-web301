@@ -1,0 +1,30 @@
+.arrow {
+    border: solid rgb(35, 64, 88);
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 46px;
+    height: 46px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.arrow:hover {
+    box-shadow: 5px 5px steelblue;
+    cursor: pointer;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.count {
+    font-size: 7rem;
+    color: rgb(35, 64, 88);
+}

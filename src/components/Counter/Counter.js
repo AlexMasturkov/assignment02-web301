@@ -41,7 +41,11 @@ class Counter extends React.Component {
         <p className="count " id="count">
           {this.state.count}
         </p>
-        <div className="arrow down " onClick={this.decrement}></div>
+        <div
+          className="arrow down "
+          onClick={this.decrement}
+          hidden={this.state.count < 1}
+        ></div>
       </div>
     );
   }

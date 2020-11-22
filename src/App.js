@@ -117,7 +117,13 @@ class App extends Component {
                 </div>
                 <hr />
               </div>
-              <div className="scrolling">
+              <div className="scrolling ">
+                <span
+                  className="col-7 offset-4 "
+                  hidden={this.state.productArray[0] != null}
+                >
+                  No data available{' '}
+                </span>
                 {this.state.productArray.map((p) => {
                   return (
                     <Product
